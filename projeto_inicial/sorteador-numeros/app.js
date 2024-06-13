@@ -9,6 +9,11 @@ function sortear(){
         return; // sem retornar nada, serve para interromper a função
     }
 
+    if(quantidade > (ateNumero-doNumero)){
+        alert('Campo "Quantidade" deve ser menor ou igual ao intervalo informado no campo "Do número" até o campo "Até o número". Verifique!');
+        return;
+    }
+
     for(let i = 0; i != quantidade; i++){
         let numeroSorteado = parseInt(Math.random() * ateNumero + 1);
         //console.log(i, quantidade, '=' +numeroSorteado);
