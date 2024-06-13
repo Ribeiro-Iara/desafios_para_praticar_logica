@@ -4,6 +4,11 @@ function sortear(){
     let ateNumero = parseInt(document.getElementById('ate').value);
     let listaDeNumerosSorteados = [];
 
+    if(doNumero >= ateNumero){
+        alert('Campo "Do número" deve ser inferior ao campo "Até o número". Verifique!')
+        return;
+    }
+
     for(let i = 0; i != quantidade; i++){
         let numeroSorteado = parseInt(Math.random() * ateNumero + 1);
         //console.log(i, quantidade, '=' +numeroSorteado);
