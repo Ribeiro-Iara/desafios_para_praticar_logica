@@ -41,5 +41,4 @@ function reiniciar(){
     sorteio = [];
     document.getElementById('lista-amigos').textContent = "";
     document.getElementById('lista-sorteio').textContent = "";
-    console.log(i, l, j, limite, amigos, sorteio)
 }
