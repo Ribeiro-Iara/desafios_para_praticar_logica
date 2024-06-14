@@ -16,7 +16,7 @@ function adicionar(){
     }
 }
 
-function sortear(){ //por algum motivo que só deus sabe, não funciona, se colocar 'let sorteio = [];' aqui dentro se entrar no if ela vai zerar e não vai ter a quantidade necessária, se tirar ela, por algum motivo, que eu, a iara do passado, ainda não sabe o que é
+function sortear(){
     while(sorteio.length!=limite){
         let numeroAleatorio = parseInt(Math.random() * limite);
         if(sorteio.includes(numeroAleatorio) || numeroAleatorio == l){
