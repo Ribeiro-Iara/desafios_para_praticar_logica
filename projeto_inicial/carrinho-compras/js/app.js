@@ -7,7 +7,7 @@ function adicionar(){
     let produto = informacoesProduto.split('-')[0];
     let valor = informacoesProduto.split('R$')[1];
     let quantidade = parseInt(document.getElementById('quantidade').value);
-    if(100 > quantidade > 0){
+    if(100 > quantidade > 0){ //isNaN(quantidade) -> verifica se não existe valor 
         total += valor*quantidade;
         carrinhoDeCompra(quantidade, produto, valor, total);
         document.getElementById('quantidade').value = '';
