@@ -12,6 +12,10 @@ function adicionar(){
         alert("Informe o nome do amigo!");
         return;
     }
+    if(amigos.includes(nome)){
+        alert("Este amigo já foi adicionado!");
+        return;
+    }
     amigos.push(nome);
     document.getElementById('nome-amigo').value = '';
     let listaAmigos = document.getElementById('lista-amigos');
