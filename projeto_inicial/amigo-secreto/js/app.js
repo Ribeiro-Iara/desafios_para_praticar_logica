@@ -7,7 +7,12 @@ let sorteio = [];
 
 
 function adicionar(){
-    amigos.push(document.getElementById('nome-amigo').value);
+    let nome = document.getElementById("nome-amigo").value;
+    if (nome == ''){
+        alert("Informe o nome do amigo!");
+        return;
+    }
+    amigos.push(nome);
     document.getElementById('nome-amigo').value = '';
     let listaAmigos = document.getElementById('lista-amigos');
     limite = amigos.length;
